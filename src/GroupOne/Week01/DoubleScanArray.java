@@ -29,7 +29,7 @@ public class DoubleScanArray {
         double multiply = 2;
         double divide = 3;
 
-        double array1[] = new double [5];
+        double[] array1 = new double [5];
 
         for (int i=0; i<array.length; i++)
         {

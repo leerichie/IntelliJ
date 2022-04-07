@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Order {
 
-    private Product[] listOfOrders;
-    private Scanner scanner;
+    private final Product[] listOfOrders;
+    private final Scanner scanner;
     public static int currentNumberOfPositionsInOrder;
 
     public Order() {

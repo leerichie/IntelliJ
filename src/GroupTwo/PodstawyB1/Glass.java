@@ -2,7 +2,7 @@ package GroupTwo.PodstawyB1;
 
 public class Glass {
 
-    private int ml;
+    private final int ml;
 
     public int filled;
 

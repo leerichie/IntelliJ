@@ -2,7 +2,7 @@ package GroupOne.Week01;
 
 public class Homework4 {
     public static void main(String[] args) {
-        double array[] = new double [4];
+        double[] array = new double [4];
         array[0] = 10.1234d;
         array[1] = 20.2345d;
         array[2] = 30.3456d;

@@ -1,10 +1,20 @@
 package MyTests;
 
-import java.util.Scanner;
-import java.util.Stack;
-
 public class ForLoop {
     public static void main(String[] args) {
+
+        int rows = 5;
+
+        for (int i = 0; i <= 5; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println(" ");
+
+            for (int k = 0; k <= 5; k++) {
+                System.out.print("-");
+
+
 //        String s1 = "Hello";
 //        String s2 = "everybody";
 //        for (int i = 0; i <= s1.length(); i++) ;
@@ -13,33 +23,31 @@ public class ForLoop {
 //        System.out.println(s1.charAt(4));
 //        System.out.println(s1 + " " + s2);
 //        System.out.println(s1.concat(s2));
+//
+//        int[] array1 = {1,2,3};
+//        int[] array2 = new int[3];
+//        String[] array3 = {"Want", "a", "beer", "?"};
+//        array2[0] = 4;
+//        array2[1] = 5;
+//        array2[2] = 6;
+//        System.out.println(array1[0]);
+//        System.out.println(array2[0]);
+//        System.out.println(array3[2] + " " + array3[0].toLowerCase());
+//        System.out.println(array3[0] + " " + array1[1] + " " + array3[2] + "s" + " ?");
+//
+//        int[][] array4 = new int[2][2];
+//        array4[0][0] = 10;
+//        array4[0][1] = 20;
+//        array4[1][0] = 30;
+//        array4[1][1] = 40;
+//        int str = array4[0][0] + array4[0][1] + array4[1][0];
+////        int[][] str = array4;
+//        System.out.println(array4[0][1]);
+//        for (int i = 0; i<= array4.length; i++) ;
+//        for (int j=0; j<= array4.length; j++);
+//            System.out.print(str);
 
-        int[] array1 = {1,2,3};
-        int[] array2 = new int[3];
-        String[] array3 = {"Want", "a", "beer", "?"};
-        array2[0] = 4;
-        array2[1] = 5;
-        array2[2] = 6;
-        System.out.println(array1[0]);
-        System.out.println(array2[0]);
-        System.out.println(array3[2] + " " + array3[0].toLowerCase());
-        System.out.println(array3[0] + " " + array1[1] + " " + array3[2] + "s" + " ?");
-
-        int[][] array4 = new int[2][2];
-        array4[0][0] = 10;
-        array4[0][1] = 20;
-        array4[1][0] = 30;
-        array4[1][1] = 40;
-        int str = array4[0][0] + array4[0][1] + array4[1][0];
-//        int[][] str = array4;
-        System.out.println(array4[0][1]);
-        for (int i = 0; i<= array4.length; i++) ;
-        for (int j=0; j<= array4.length; j++);
-            System.out.print(str);
-
-
-
-        // times table
+                // times table
 
 //        int a;
 //        int b;
@@ -128,7 +136,7 @@ public class ForLoop {
 //        {
 //
 //        }
-
+            }
+        }
     }
 }
-

@@ -21,7 +21,7 @@ public class Conditional_If_Switch {
             System.out.println("Incorrect");
         }
 
-        System.out.println("");
+        System.out.println();
 
         int Love = 0;
         switch (Love) {
@@ -42,7 +42,7 @@ public class Conditional_If_Switch {
 
 
 
-            System.out.println("");
+            System.out.println();
 
 
 

@@ -14,7 +14,7 @@ public class MyTests {
         long b = 20 + 20 + 20L;
         System.out.println(b / a);
 
-        System.out.println("");
+        System.out.println();
 
         char c = 'c';
         char bigC = 'C';
@@ -25,7 +25,7 @@ public class MyTests {
         System.out.println("Display should read 'C' on 1 line and 'c' just below:");
         System.out.println(" " + bigC + newLine + " " + c);
 
-        System.out.println("");
+        System.out.println();
 
         /* length counts amount of text in speech marks*/
 
@@ -40,7 +40,7 @@ public class MyTests {
         /* substring shows text from chosen numbers */
         System.out.println(text.substring(04, 15));
 
-        System.out.println("");
+        System.out.println();
 
             /* date and time */
 
@@ -49,7 +49,7 @@ public class MyTests {
         System.out.println(LocalTime.now());
         System.out.println(LocalDateTime.now());
 
-        System.out.println("");
+        System.out.println();
 
         /* Maths */
 
@@ -61,12 +61,12 @@ public class MyTests {
         Byte byteObject = new Byte(byteValue);
         System.out.println("byteValue = " + byteValue);
 
-        System.out.println("");
+        System.out.println();
 
         boolean booleanValue = true;
         System.out.println("It is = " + booleanValue);
 
-        System.out.println("");
+        System.out.println();
 
         System.out.println("############################");
         System.out.println("#                          #");
@@ -76,7 +76,7 @@ public class MyTests {
         System.out.println("#                          #");
         System.out.println("############################");
 
-        System.out.println("");
+        System.out.println();
 
         int x = 5;
         System.out.println("The result is: " + x);
@@ -85,7 +85,7 @@ public class MyTests {
         System.out.print(--x);
         System.out.println(x--);
 
-        System.out.println("");
+        System.out.println();
 
         int i = 5, j = 5;
         System.out.println(i == j);
@@ -95,7 +95,7 @@ public class MyTests {
         System.out.println(i >= 8);
         System.out.println(i <= 8);
 
-        System.out.println("");
+        System.out.println();
 
         /* operators - t/f, same as, different to, higher, lower than */
 
@@ -103,7 +103,7 @@ public class MyTests {
         System.out.println(dupa == tylek);
         System.out.println(dupa != tylek);
 
-        System.out.println("");
+        System.out.println();
 
         /*  */
 
@@ -111,13 +111,13 @@ public class MyTests {
         Integer twoHundredObject = 200;
         System.out.println(twoHundredValue == twoHundredObject);
 
-        System.out.println("");
+        System.out.println();
 
         int e = 50;
         e -= 40;
         System.out.println(e);
 
-        System.out.println("");
+        System.out.println();
 
         int r = 100;
         int s = 200;
@@ -133,16 +133,16 @@ public class MyTests {
         System.out.println(u);
         System.out.println(v);
 
-        System.out.println("");
+        System.out.println();
 
-        int myPlus1 = 10;;
+        int myPlus1 = 10;
         System.out.println(++ myPlus1);
         System.out.println(-- myPlus1);
         System.out.println(myPlus1 == 6 + 4);
         System.out.println(myPlus1 == 2*5);
         System.out.println(myPlus1 == 20/3);
 
-        System.out.println("");
+        System.out.println();
 
         boolean myValue1 = true;
         boolean myValue2 = false;

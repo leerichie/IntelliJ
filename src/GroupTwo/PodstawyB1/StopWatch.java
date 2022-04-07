@@ -5,7 +5,7 @@ public class StopWatch {
     private long stop;
     private boolean isStarted = false;
     private boolean wasStarted = false;
-    private double[] inter = new double[100];
+    private final double[] inter = new double[100];
     private int i = 0;
 
 

@@ -2,16 +2,97 @@ package MyTests;
 
 public class Testtt {
     public static void main(String[] args) {
+        int aa = 0;             // A
+        int bb = 1;
+        int cc = 5;
+        int dd = 10;
 
-        double a = 6.3;
-        int b = 4;
-        System.out.println(a + b);
-        System.out.println(5 + 5 + "5");
-        System.out.println(5 + 'c' + 5);
+        checkNum(aa);
+        checkNum(bb);
+        checkNum(cc);
+        checkNum(dd);
+    }
+
+    static void checkNum(int number) {
+        System.out.println("Is 'aa' even and between 0 and 10? " + (number % 2 == 0 && number >= 0 && (number + 1) <= 10));
+    }
+
+//    public static void main(String[] args) {
+//
+//        String a = "Beer";          // B
+//        String b = "fosters";
+//
+//        String returnedValue = methodToReturn();
+//        System.out.println(returnedValue);
+//    }
+//
+//    static String methodToReturn() {                     // can print in main
+//        return "(No sys.out needed in main) stout";
 
 
+    {
+        likeBeer("ale");            // C
+        likeBeer("lager");
+        likeBeer("sex");
+
+    }
+
+    static void likeBeer(String taste) {               // only prints with parameter 'taste' in () in sout
+        System.out.println("I think about " + (taste) + " on a regular basis."); // () needed
+    }
+}
 
 
+//        int a = 0;
+//        int b = 1;
+//        int c = 2;
+//        int d = 3;
+//        char e = 'e';
+//        char f = 'f';
+//        char g = 'g';
+//
+//        System.out.println(a>b);
+//        System.out.println(a==b);
+//        System.out.println(c/b);
+//        System.out.println(c%b);
+//        System.out.println(c%b==2);
+//        if (c%b==0){
+//            System.out.println("is even");
+//        } else{
+//            System.out.println("is odd");
+//        }
+//        if (e<f && g>f){
+//            System.out.println("e is before f and f is after g");
+//        } else{
+//            System.out.println("incorrect ");
+//        }
+
+//        int i = 3;
+//        i++;    //4
+//        System.out.println(i);  //4
+//        i++;    // 5
+//        System.out.println(i);  //5
+//        System.out.println(++i);    //6
+//        System.out.println(i++);    //6
+//        System.out.println(i);  //7
+
+//        String a = "Hello";
+//        for (int i = 0; i < a.length(); i++) {
+//            if (i == 2) {
+//                break;
+//            }
+//            System.out.println(a);
+//        }
+//        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+//        for (String i : cars) {
+//            System.out.print(i);
+//        }
+
+//        double a = 6.3;
+//        int b = 4;
+//        System.out.println(a + b);
+//        System.out.println(5 + 5 + "5");
+//        System.out.println(5 + 'c' + 5);
 
 ////        for (int i=0; i<5; i++){
 ////            System.out.println(i);
@@ -74,10 +155,6 @@ public class Testtt {
 //            }
 //            System.out.print(i + " ");
 //        }
-
-
-
-
 
 
 //        String str = "--Hello my name is Lee--";
@@ -313,5 +390,3 @@ public class Testtt {
 
 
          */
-    }
-}

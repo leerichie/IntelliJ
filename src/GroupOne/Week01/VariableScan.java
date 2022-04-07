@@ -23,7 +23,7 @@ public class VariableScan {
         } else {
             System.out.println("Second no. is bigger");
         }
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Enter the total of your numbers +10:");
         Scanner myInt1 = new Scanner(System.in);

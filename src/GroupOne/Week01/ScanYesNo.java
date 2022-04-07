@@ -18,7 +18,7 @@ public class ScanYesNo {
         } else {
             System.out.println("Kłamczuch :P");
         }
-        System.out.println("");
+        System.out.println();
 
 
         System.out.println("Idziemy na szota? - pisz 'tak' albo 'nie'");

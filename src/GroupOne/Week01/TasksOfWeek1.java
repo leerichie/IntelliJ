@@ -5,7 +5,7 @@ public class TasksOfWeek1 {
 
         // Task 1
         System.out.println("--Task 1--");
-        System.out.println("");
+        System.out.println();
 
         System.out.println("Hello lee");
 
@@ -30,9 +30,9 @@ public class TasksOfWeek1 {
         double mySalary = (18453.67d);
         System.out.println("Your salary as an example: " + mySalary);
 
-        System.out.println("");
+        System.out.println();
         System.out.println("--Task 2--");
-        System.out.println("");
+        System.out.println();
         // Task 2
 
         int a = 10;

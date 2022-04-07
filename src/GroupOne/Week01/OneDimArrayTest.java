@@ -26,7 +26,7 @@ public class OneDimArrayTest {
         System.out.println("Never been called that");
         System.out.println("Table Array size: " + array.length);
 
-        System.out.println("");
+        System.out.println();
     }
 
 }

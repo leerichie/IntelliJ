@@ -13,13 +13,13 @@ public class HelloWorld {
         System.out.println(age3);
         System.out.println(age2);
 
-        System.out.println("");
+        System.out.println();
 
         int world = 5;
         int swiat = 10;
         System.out.println("The world is: " + world + "," + swiat);
 
-        System.out.println("");
+        System.out.println();
 
 
 
