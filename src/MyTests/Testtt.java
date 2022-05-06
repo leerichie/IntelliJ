@@ -1,9 +1,25 @@
 package MyTests;
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class Testtt {
+    public static void main(String[] args) {
+        Dog dog1 = new Dog();
+
+        dog1.name = "Swift";
+        dog1.age = 7;
+        dog1.gender = "female";
+        dog1.eat();
+        dog1.myDog();
+
+        System.out.println();
+        Cat cat1 = new Cat();
+
+        cat1.name = "King";
+        cat1.age = 4;
+        cat1.gender = "male";
+        cat1.eat();
+        cat1.myCat();
+    }
+}
 
 //    static Scanner scanner = new Scanner(System.in);      // number guess with play again
 //
