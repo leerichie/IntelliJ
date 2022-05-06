@@ -25,7 +25,7 @@ public class Hangman
         String newasterisk = "";
         for (int i = 0; i < word.length(); i++) {
             if (word.charAt(i) == guess.charAt(0)) {
-                newasterisk += guess.charAt(0);
+                System.out.println("Good guess! \n" + (newasterisk += guess.charAt(0)));
             } else if (asterisk.charAt(i) != '*') {
                 newasterisk += word.charAt(i);
             } else {
@@ -40,7 +40,7 @@ public class Hangman
             asterisk = newasterisk;
         }
         if (asterisk.equals(word)) {
-            System.out.println("Correct! You win! The word was " + word);
+            System.out.println("Correct! You win! The word was: " + word.toUpperCase());
         }
     }
 
@@ -124,7 +124,7 @@ public class Hangman
             System.out.println("   |         / | \\");
             System.out.println("   |          / \\ ");
             System.out.println("___|___      /   \\");
-            System.out.println("GAME OVER! The word was " + word);
+            System.out.println("GAME OVER! The word was: " + word.toUpperCase());
         }
     }
 }

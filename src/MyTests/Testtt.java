@@ -1,46 +1,393 @@
 package MyTests;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Testtt {
-    public static void main(String[] args) {
-        int aa = 0;             // A
-        int bb = 1;
-        int cc = 5;
-        int dd = 10;
 
-        checkNum(aa);
-        checkNum(bb);
-        checkNum(cc);
-        checkNum(dd);
-    }
-
-    static void checkNum(int number) {
-        System.out.println("Is 'aa' even and between 0 and 10? " + (number % 2 == 0 && number >= 0 && (number + 1) <= 10));
-    }
-
+//    static Scanner scanner = new Scanner(System.in);      // number guess with play again
+//
 //    public static void main(String[] args) {
-//
-//        String a = "Beer";          // B
-//        String b = "fosters";
-//
-//        String returnedValue = methodToReturn();
-//        System.out.println(returnedValue);
+//        int playAgain = 1;
+//        do {
+//            loadGame();
+//            System.out.println("Type 0 to finish.");
+//            playAgain = loadNumber();
+//        } while(playAgain!=0);
 //    }
 //
-//    static String methodToReturn() {                     // can print in main
-//        return "(No sys.out needed in main) stout";
+//    static int generateNumber(){
+//        System.out.println("Number generation...");
+//        return new Random().nextInt(10);
+//    }
+//
+//    static int loadNumber(){
+//        System.out.print("? ");
+//        return scanner.nextInt();
+//    }
+//
+//    static void loadGame(){
+//        int randomNumber = generateNumber();
+//        int loaded = loadNumber();
+//        while(loaded!=randomNumber){
+//            System.out.println("Number too " + (loaded>randomNumber? "high" : "low"));
+//            loaded = loadNumber();
+//        }
+//        System.out.println("Success!");
+//    }
+//}
+
+//        Scanner input = new Scanner(System.in);     // my calculator
+//        System.out.print("Enter first number: ");
+//        int num1 = input.nextInt();
+//        System.out.print("Enter second number: ");
+//        int num2 = input.nextInt();
+//        System.out.println("Choose an option: \n" +
+//                "1 - add\n" +
+//                "2 - subtract\n" +
+//                "3 - multiply\n" +
+//                "4 - divide");
+//        int math = input.nextInt();
+//        switch (math) {
+//            case 1:
+//                System.out.print("Addition: " + (num1 + num2));
+//                break;
+//            case 2:
+//                System.out.print("Subtraction: " + (num1 - num2));
+//                break;
+//            case 3:
+//                System.out.print("Multiplication: " + (num1 * num2));
+//                break;
+//            case 4:
+//                System.out.println("Division: " + (num1 / num2));
+//            {
+//                if (num1 < num2) {
+//                    System.out.println("Unable to divide");
+//                }
+//                break;
+//            }
+//            default:
+//                System.out.println("Invalid choice");
+//
+//        }
+//    }
+//}
+//
+//        int random = new Random().nextInt(10);           // my own guess number game!!
+//        int num = 0;
+//        int play = 0;
+//        Scanner input = new Scanner(System.in);
+//        System.out.println("Guess a random number: ");
+//        num = input.nextInt();
+//        while (num != random) {
+//            if (num < random) {
+//                System.out.println("Too low, try higher!");
+//            }
+//            if (num > random) {
+//                System.out.println("Too high, try lower!");
+//            }
+//            num = input.nextInt();
+//            if (num == random) {
+//                System.out.println("Well done! :)");
+//            }
+//        }
+//    }
+//}
+
+//        int a = 1;
+//        int b = 5;
+//        int bc = 10;
+//        char c = '!', d = 'f', e = 'u';
+//        String str = "howdy partner";
+//
+//        checkNumber(a);
+//        checkNumber(b);
+//        checkSymbol(c);
+//        checkSymbol1(d);
+//        checkString(str);
+//        writeAsciiMsg(111);
+//
+//        System.out.println("2 num here, 3 in method: " + addNumbers(a, b)); // 2 num here, 3rd added in method
+//        System.out.println(isEqual(a, b));
+//        System.out.println(isDivisible(bc, b));
+//
+//        int add = addNumbers(10, 20);
+//        boolean divide = isDivisible(10, 2);
+//
+//        System.out.println(add + " - is the result.");
+//
+//        fun(5);
+//        fun(2);
+//
+//
+//    }
+//    static void fun(int x){
+//        switch (x){
+//            case 1: case 6:
+//                System.out.println("Apple");
+//                break;
+//            case 2:
+//                System.out.println("Banana");
+//                break;
+//            case 3:
+//                System.out.println("Orange");
+//                break;
+//            default:
+//                System.out.println("Kiwi");
+//        }
+//    }
+//    static boolean isDivisible(int num1, int num2){
+//        return num1 % num2 == 0;
+//    }
+//    static int addNumbers(int num1, int num2){
+//        return num1 + num2 + 10;    // added permanent 3rd number to method
+//    }
+//    static boolean isEqual(int num1, int num2){
+//        return num1 == num2;
+//    }
+//    static void writeAsciiMsg(int asciiNumber){
+//        System.out.println((char) asciiNumber + " yeah !");
+//    }
+//
+//    static void checkSymbol1(char asciiMessage){
+//        System.out.println(asciiMessage + 117 + 99 + 107 + " yeah !");
+//    }
+//    static void checkString(String message){
+//        System.out.println(message + " this is my msg");
+//    }
+//
+//    static void checkNumber(int number) {
+//        System.out.println("Is a even and between 0 and 10 (even incremented)? " + (number % 2 == 0 && number >=
+//                0 && (number + 1) <= 10));
+//        System.out.println(number);
+//    }
+//
+//    static void checkSymbol(char sym) {
+//        System.out.println("Is 'c' between a and z: " + (sym >= 97 && sym <= 122));
+//    }
+//}
+
+//        System.out.println("a = 1\nb = 5");
+//        System.out.println("Is 'a' bigger than b : " + (a > b));
+//        System.out.println("Is 'a' equal to b: " + (a == b));
+//        System.out.println("Is 'a' between 0 and 10: " + (a < 10 && a > 0));
+//        System.out.println("Is 'a' between 0 and 10 +1: " + (a < 10 && a > 0 + 1));
+//        System.out.println("Is 'a' an even number: " + (a % 2 == 0));
+//        System.out.println("Is 'a' an odd number: " + !(a % 2 == 0));
+//        System.out.println("Is 'c' between a and z: " + (c >= 97 && c <= 122)); // ascii
 
 
-    {
-        likeBeer("ale");            // C
-        likeBeer("lager");
-        likeBeer("sex");
+//        String result = " strang "
+//                .substring(1)   // prints from index no.
+//                .replace("a", "i")
+//                .concat("!")        // add suffix
+//                .toUpperCase()
+//                .trim();    // empty spaces
+//
+//        String result2 = " learning ";
+//
+//        System.out.println(result);
+//        System.out.println(result.contains("N"));
+//        System.out.println(result.equals(result2));
+//
+//        char extract;       // reverse string
+//        String result3 = "";
+//        for (int i=0; i<result2.length(); i++) {
+//            extract = result2.charAt(i);
+//            result3 = extract + result3;
+//        }
+//        System.out.println(result3);
+//    }
+//}
+//        Scanner input = new Scanner(System.in);
 
-    }
+//        String myArray[][] = {
+//                {"Hi", "bye", "yo"},
+//                {"you", "me", "tak", "nie"},
+//        };
+//        System.out.println(myArray[0].length);
+//        System.out.println(myArray[1].length);
+//
+//        for (int i = 0; i < myArray.length; i++){       // for loops inner and outer
+//            for (int j = 0; j < myArray[i].length; j++) {
+//                System.out.print(myArray[i][j]);
+//            }
+//        }
+//        for (String[] innerArray : myArray) {            // OR for - each loops
+//            for (String outerArray : innerArray) {
+//                System.out.print(outerArray);
+//            }
 
-    static void likeBeer(String taste) {               // only prints with parameter 'taste' in () in sout
-        System.out.println("I think about " + (taste) + " on a regular basis."); // () needed
-    }
-}
+//        ArrayList<Integer> integersarrayList = new ArrayList<>();
+//        ArrayList<String> languages = new ArrayList<>();
+//        languages.add("Polish");
+//        languages.add("English");
+//        languages.add("Spanish");
+//        System.out.println("ArrayList:\t" + languages );
+//
+//        languages.remove(1);
+//        System.out.println("Removed 1:\t" + languages);
+//        languages.add(1, "British");
+//        System.out.println(languages);
+//
+//        languages.set(2, "French");
+//        System.out.println("Modified 1:\t" + languages);
+//
+//        String text = languages.get(0);
+//        System.out.println("Printed 1:\t" + text);
+//
+//        for (String loop : languages){
+//            if (loop == "British");
+//            System.out.println("test: " + loop);
+//            continue;
+//        }
+
+
+//        double num = 0.0;
+//        double sum = 0.0;
+//        while (true){
+//            System.out.println("enter number");
+//            num = input.nextDouble();
+//
+//            if (num <= 0.0){
+//                break;
+//            }
+//            sum += num;
+//        }
+//        System.out.println("sum " + sum);
+
+
+//        String names[] = {"Ashley", "Ania", "Richards", "Jęsiak"};
+//        for (int i = 0; i < 4; i++) {
+//            System.out.print(names[i]);
+//            if (i == 0) ;
+//            break;
+//        }
+//        byte a = 13;
+//        short b = 40;
+//        int c = 10;
+//        double d = 20.2;
+//        long e = 12345678;
+//        float f = 987654321;
+//        boolean isReal = true;
+//        char myChar = 'a';
+//        char myChar2 = 65;
+//        int z = (double) d;
+//        System.out.println(z);
+
+
+//        // Scanner Class                      // guess random number with user input
+//        Scanner sc = new Scanner(System.in);
+//
+//        // Generate the numbers
+//        int number = 1 + (int) (10 * Math.random());
+//
+//        // Given K trials
+//        int K = 5;
+//        int i, guess;
+//
+//        System.out.println(
+//                "A number is randomly chosen"
+//                        + " between 1 and 10.\n\n"
+//                        + "Guess the number"
+//                        + " in 5 tries.\n");
+//
+//        // Iterate over K Trials
+//        for (i = 0; i < K; i++) {
+//
+//            System.out.println(
+//                    "Enter a number:");
+//
+//            // Take input for guessing
+//            guess = sc.nextInt();
+//
+//            // If the number is guessed
+//            if (number == guess) {
+//                System.out.println(
+//                        "Congratulations! You guessed the number.");
+//                break;
+//            } else if (number > guess
+//                    && i != K - 1) {
+//                System.out.println(
+//                        "The number is greater than " + guess);
+//            } else if (number < guess
+//                    && i != K - 1) {
+//                System.out.println(
+//                        "The number is less than " + guess);
+//            }
+//        }
+//
+//        if (i == K) {
+//            System.out.println(
+//                    "You have used all 5 guesses.");
+//
+//            System.out.println(
+//                    "The number was " + number);
+//        }
+//
+//    }
+//}
+
+
+//        int z = 5;
+//
+//        int returnedValue = methodToAlwaysReturn1(10, 20);
+//        System.out.println(returnedValue + " plus this: " + z);
+//    }
+//
+//    static int methodToAlwaysReturn1(int x, int y) {
+//        return x + y;
+//    }
+//}
+
+//        int aa = 0;             // A
+//        int bb = 1;
+//        int cc = 5;
+//        int dd = 10;
+//
+//        checkNum(aa);
+//        checkNum(bb);
+//        checkNum(cc);
+//        checkNum(dd);
+//    }
+//
+//    static void checkNum(int number) {
+//        System.out.println("Is 'aa' even and between 0 and 10? " + (number % 2 == 0 && number >= 0 && (number + 1) <= 10));
+//    }
+
+//        int returnedValue = methodToReturn(10, 10, 10);        //  B
+//        System.out.println(returnedValue + " reply");
+//    }
+//
+//    static int methodToReturn(int x, int y, int z) {                     // can print in main
+//        x = 10 + 10;
+//        y = 50 - 51;
+//        z = 20 * 5;
+//        return z;
+//
+
+//    myAnimal("Lee", "Ania");
+//    myAnimal("Charles", "Wendy");
+//
+//
+//    }
+//    static String myAnimal(String name, String name1) {
+//        System.out.println(myAnimal("King", "Choco"));
+//        return name;
+//    }
+//
+//
+//    {
+//        likeBeer("ale");            // C
+//        likeBeer("lager");
+//        likeBeer("sex");
+//
+//    }
+//
+//    static void likeBeer(String taste) {               // only prints with parameter 'taste' in () in sout
+//        System.out.println("I think about " + (taste) + " on a regular basis."); // () needed
+//    }
+//}
 
 
 //        int a = 0;
@@ -288,7 +635,7 @@ public class Testtt {
         System.out.printf("answer for %d divided by %d is %d", 10, 2, 10/2);
         */
 
-        // times table
+// times table
 //
 //        int a;
 //        int b;
@@ -307,7 +654,7 @@ public class Testtt {
 //        System.out.println("* * * *");
 //        System.out.println("* * * * *");
 
-        //  triangle tree
+//  triangle tree
 
 //        System.out.println();
 //
