@@ -1,25 +1,53 @@
 package MyTests;
 
+import java.util.Scanner;
+
 public class Testtt {
     public static void main(String[] args) {
-        Dog dog1 = new Dog();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter no.1:");
+        int num = sc.nextInt();
+        System.out.println("Enter no.2:");
+        int num2 = sc.nextInt();
 
-        dog1.name = "Swift";
-        dog1.age = 7;
-        dog1.gender = "female";
-        dog1.eat();
-        dog1.myDog();
+        int sum = getTotal(num, num2);
+        System.out.println("Total is: " + sum);
+        sc.nextLine();
 
-        System.out.println();
-        Cat cat1 = new Cat();
+        System.out.println("Enter a word to join: ");
+        String word1 = sc.nextLine();
+        System.out.println("Enter second word: ");
+        String word2 = sc.nextLine();
 
-        cat1.name = "King";
-        cat1.age = 4;
-        cat1.gender = "male";
-        cat1.eat();
-        cat1.myCat();
+        String joined = getWord(word1,word2);
+        System.out.println("Those 2 words together: " + joined);
+
+    }
+    public static int getTotal (int num, int num2)  {
+        return num + num2;
+    }
+    public static String getWord (String one, String two) {
+        return one.concat(two);
     }
 }
+//        Dog dog1 = new Dog();
+//
+//        dog1.name = "Swift";
+//        dog1.age = 7;
+//        dog1.gender = "female";
+//        dog1.eat();
+//        dog1.myDog();
+//
+//        System.out.println();
+//        Cat cat1 = new Cat();
+//
+//        cat1.name = "King";
+//        cat1.age = 4;
+//        cat1.gender = "male";
+//        cat1.eat();
+//        cat1.myCat();
+//    }
+//}
 
 //    static Scanner scanner = new Scanner(System.in);      // number guess with play again
 //
