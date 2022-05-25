@@ -1,4 +1,4 @@
-package JavaAdvanced;
+package JavaAdvanced.Encapsulation;
 
 class Account {
     public final int number;
@@ -18,6 +18,7 @@ class Account {
         }
         this.balance = balance;
     }
+
 
 }
 

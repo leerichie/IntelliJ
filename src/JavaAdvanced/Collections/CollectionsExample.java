@@ -37,10 +37,10 @@ public class CollectionsExample {
 
         System.out.println("Intersection of lists: " + intersection);
 
-        ArrayList<Integer> symetricDiff = new ArrayList<>(listCopy);
-        symetricDiff.removeAll(intersection);
+        ArrayList<Integer> symmetricDiff = new ArrayList<>(listCopy);
+        symmetricDiff.removeAll(intersection);
 
-        System.out.println("Symmetry of: " + symetricDiff);
+        System.out.println("Symmetry of: " + symmetricDiff);
 
 
 
